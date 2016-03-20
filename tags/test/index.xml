@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Test on Hugo PacMan Theme Demo</title>
-    <link>http://pacman.coderzh.com/tags/test/</link>
+    <link>http://coderzh.github.io/hugo-pacman-theme/tags/test/</link>
     <description>Recent content in Test on Hugo PacMan Theme Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 20 Feb 2016 15:34:05 +0800</lastBuildDate>
-    <atom:link href="http://pacman.coderzh.com/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://coderzh.github.io/hugo-pacman-theme/tags/test/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>hello hugo</title>
-      <link>http://pacman.coderzh.com/post/hello-hugo/</link>
+      <link>http://coderzh.github.io/hugo-pacman-theme/post/hello-hugo/</link>
       <pubDate>Sat, 20 Feb 2016 15:34:05 +0800</pubDate>
       
-      <guid>http://pacman.coderzh.com/post/hello-hugo/</guid>
+      <guid>http://coderzh.github.io/hugo-pacman-theme/post/hello-hugo/</guid>
       <description>
 
 &lt;h1 id=&#34;hello-hugo:559804b0a39dd16d2d1d1238c597145a&#34;&gt;Hello Hugo&lt;/h1&gt;

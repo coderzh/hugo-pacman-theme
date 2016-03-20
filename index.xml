@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo PacMan Theme Demo</title>
-    <link>http://pacman.coderzh.com/</link>
+    <link>http://coderzh.github.io/hugo-pacman-theme/</link>
     <description>Recent content on Hugo PacMan Theme Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 20 Mar 2016 23:28:02 +0800</lastBuildDate>
-    <atom:link href="http://pacman.coderzh.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://coderzh.github.io/hugo-pacman-theme/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>http://pacman.coderzh.com/about/</link>
+      <link>http://coderzh.github.io/hugo-pacman-theme/about/</link>
       <pubDate>Sun, 20 Mar 2016 23:28:02 +0800</pubDate>
       
-      <guid>http://pacman.coderzh.com/about/</guid>
+      <guid>http://coderzh.github.io/hugo-pacman-theme/about/</guid>
       <description>
 
 &lt;h2 id=&#34;关于:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;关于&lt;/h2&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>first</title>
-      <link>http://pacman.coderzh.com/post/first/</link>
+      <link>http://coderzh.github.io/hugo-pacman-theme/post/first/</link>
       <pubDate>Sun, 20 Mar 2016 12:13:19 +0800</pubDate>
       
-      <guid>http://pacman.coderzh.com/post/first/</guid>
+      <guid>http://coderzh.github.io/hugo-pacman-theme/post/first/</guid>
       <description>
 
 &lt;h2 id=&#34;主题概况:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;主题概况&lt;/h2&gt;
@@ -124,10 +124,10 @@ This line is part of the same quote.&lt;/p&gt;
     
     <item>
       <title>hello hugo</title>
-      <link>http://pacman.coderzh.com/post/hello-hugo/</link>
+      <link>http://coderzh.github.io/hugo-pacman-theme/post/hello-hugo/</link>
       <pubDate>Sat, 20 Feb 2016 15:34:05 +0800</pubDate>
       
-      <guid>http://pacman.coderzh.com/post/hello-hugo/</guid>
+      <guid>http://coderzh.github.io/hugo-pacman-theme/post/hello-hugo/</guid>
       <description>
 
 &lt;h1 id=&#34;hello-hugo:559804b0a39dd16d2d1d1238c597145a&#34;&gt;Hello Hugo&lt;/h1&gt;

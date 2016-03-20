@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术文章 on Hugo PacMan Theme Demo</title>
-    <link>http://pacman.coderzh.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
+    <link>http://coderzh.github.io/hugo-pacman-theme/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
     <description>Recent content in 技术文章 on Hugo PacMan Theme Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 20 Mar 2016 12:13:19 +0800</lastBuildDate>
-    <atom:link href="http://pacman.coderzh.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://coderzh.github.io/hugo-pacman-theme/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>first</title>
-      <link>http://pacman.coderzh.com/post/first/</link>
+      <link>http://coderzh.github.io/hugo-pacman-theme/post/first/</link>
       <pubDate>Sun, 20 Mar 2016 12:13:19 +0800</pubDate>
       
-      <guid>http://pacman.coderzh.com/post/first/</guid>
+      <guid>http://coderzh.github.io/hugo-pacman-theme/post/first/</guid>
       <description>
 
 &lt;h2 id=&#34;主题概况:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;主题概况&lt;/h2&gt;

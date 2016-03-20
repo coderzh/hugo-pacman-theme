@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://pacman.coderzh.com/</loc>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/</loc>
     <lastmod>2016-03-20T23:28:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://pacman.coderzh.com/about/</loc>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/about/</loc>
     <lastmod>2016-03-20T23:28:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://pacman.coderzh.com/post/first/</loc>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/post/first/</loc>
     <lastmod>2016-03-20T12:13:19+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://pacman.coderzh.com/post/hello-hugo/</loc>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/post/hello-hugo/</loc>
     <lastmod>2016-02-20T15:34:05+08:00</lastmod>
   </url>
   
