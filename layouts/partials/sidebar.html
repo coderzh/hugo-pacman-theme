@@ -1,0 +1,11 @@
+<div class="openaside"><a class="navbutton" href="#" title="{{ .Site.Params.Strings.ShowSideBar }}"></a></div>
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="{{ .Site.Params.Strings.HideSideBar }}"></a></div>
+<aside class="clearfix">
+  {{ partial "widgets/categories" . }}
+  {{ partial "widgets/tags" . }}
+  {{ partial "widgets/archive" . }}
+  {{ partial "widgets/tagcloud" . }}
+  {{ partial "widgets/rss" . }}
+</aside>
+</div>

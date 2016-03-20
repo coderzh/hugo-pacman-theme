@@ -1,0 +1,15 @@
+<header class="article-info clearfix">
+  <h1 itemprop="name">
+      <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="url">{{ .Title }}</a>
+  </h1>
+  <p class="article-author">By
+    {{ if and (isset .Params "Author") (isset .Params "AuthorHomepage") }}
+      <a href="{{ .Params.AuthorHomepage }}" title="{{ .Params.Author }}">{{ .Params.Author }}</a>
+    {{ else }}
+      <a href="{{ .Site.Params.AuthorHomepage }}" title="{{ .Site.Params.Author }}">{{ .Site.Params.Author }}</a>
+    {{ end }}
+  </p>
+  <p class="article-time">
+    <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.DateFormat }}</time>
+  </p>
+</header>

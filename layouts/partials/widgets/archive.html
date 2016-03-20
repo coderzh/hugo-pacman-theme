@@ -1,0 +1,14 @@
+{{ if not (eq (len .Site.Pages) 0) }}
+  <div class="archiveslist">
+    <p class="asidetitle">{{ .Site.Params.Strings.Archive }}</p>
+    <ul class="archive-list">
+      {{ range $value := .Site.Pages.GroupByDate .Site.Params.MonthFormat }}
+      {{ $url := (index $value.Pages 0).Node.Date.Format "2006-01" | urlize }}
+      <li class="archive-list-item">
+        <a class="archive-list-link" href="/post/#{{ $url }}">{{ .Key }}</a><span class="archive-list-count">{{ len $value.Pages }}</span>
+      </li>
+      {{ end }}
+    </ul>
+
+  </div>
+{{ end }}

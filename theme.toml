@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Hugo Pacman Theme"
+license = "MIT"
+licenselink = "https://github.com/coderzh/hugo-pacman-theme/blob/master/LICENSE.md"
+description = ""
+homepage = "http://blog.coderzh.com/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.15
+
+[author]
+  name = "coderzh"
+  homepage = "http://blog.coderzh.com"
+
+# If porting an existing theme
+[original]
+  name = "pacman"
+  homepage = "https://github.com/A-limon/pacman"
+  repo = "https://github.com/A-limon/pacman"

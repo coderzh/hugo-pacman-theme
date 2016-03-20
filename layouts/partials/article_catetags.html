@@ -1,0 +1,19 @@
+{{ if isset .Params "tags" }}
+{{ if not (eq (len .Params.tags) 0) }}
+<div class="article-tags">
+  <span></span>
+  {{ range .Params.tags }}
+  <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ if not (eq (len .Params.categories) 0) }}
+<div class="article-categories">
+  <span></span>
+  {{ range .Params.tags }}
+  <a class="article-category-link" href="/categories/{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

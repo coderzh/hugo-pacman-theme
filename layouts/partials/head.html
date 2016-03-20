@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}zh-CN{{ end }}">
+<head>
+  <meta charset="UTF-8">
+    <title>{{ if ne .URL "/" }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    {{ with .Site.Params.Author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Description }}<meta name="description" content="{{ . }}">{{ else }}
+    <meta name="description" content="{{ .Site.Params.Description }}">{{ end }}
+    {{ with .Keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+    {{ if .Site.Params.Twitter }}<meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ .Site.Params.Twitter }}" />
+    <meta name="twitter:title" content="{{ if ne .URL "/" }}{{ .Title }} - {{ end }}{{ .Site.Title }}" />{{ end }}
+    {{ with .Description }}<meta name="twitter:description" content="{{ . }}" />{{ else }}
+    <meta name="twitter:description" content="{{ .Site.Params.Description }}">{{ end }}
+    {{ if .RSSlink }}<link rel="alternate" href="{{ .Site.BaseURL }}feed.xml" title="{{ .Site.Title }}" type="application/rss+xml"/>{{ end }}
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico"/>
+    <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="{{ .Site.BaseURL }}apple-touch-icon.png" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+</head>

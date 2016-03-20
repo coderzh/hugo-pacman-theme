@@ -1,0 +1,20 @@
+{{ partial "head.html" . }}
+<body>
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+  <div id="container">
+    <div id="main">
+      {{ range .Data.Pages.GroupByDate "2006-01" }}
+      <h2 id="{{ .Key }}">{{ .Key }}</h2>
+      {{ range .Pages }}
+      {{ partial "article.html" . }}
+      {{ end }}
+      {{ end }}
+    </div>
+    {{ partial "sidebar.html" . }}
+  </div>
+  <footer>{{ partial "footer.html" . }}</footer>
+  {{ partial "after_footer.html" .}}
+</body>
+</html>

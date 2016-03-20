@@ -1,0 +1,7 @@
+<footer class="article-footer clearfix">
+  {{ partial "article_catetags.html" . }}
+  <div class="article-share" id="share">
+    <div data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-tsina="{{ .Site.Params.WeiboID }}" class="share clearfix">
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,17 @@
+<div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody">
+    {{ partial "article_header.html" . }}
+	<div class="article-content">
+    {{ partial "article_gallery.html" . }}
+    {{ if isset .Params "toc"}}
+		<div class="toc-article">
+			<strong class="toc-title">{{ .Site.Params.Strings.TableOfContents }}</strong>
+      {{ .TableOfContents }}
+		</div>
+    {{ end }}
+    {{ .Content }}
+	</div>
+  {{ partial "article_footer.html" . }}
+	</article>
+  {{ partial "comment.html" . }}
+</div>

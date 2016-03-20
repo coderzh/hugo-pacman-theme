@@ -1,0 +1,27 @@
+<div>
+  {{ if .Site.Params.Imglogo }}
+  <div id="imglogo">
+    <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}{{ .Site.Params.Imglogo }}" alt="{{ .Site.Title }}" title="{{ .Site.Title }}"/></a>
+  </div>
+  {{ end }}
+  <div id="textlogo">
+    <h1 class="site-name"><a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a></h1>
+    <h2 class="blog-motto">{{ with .Site.Params.Subtitle }}{{ . }}{{ end }}</h2>
+  </div>
+  <div class="navbar"><a class="navbutton navmobile" href="#" title="menu"></a></div>
+  <nav class="animated">
+    <ul>
+      {{ range .Site.Menus.Main }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+      <li>
+        <form class="search" action="https://www.google.com/search" method="get" accept-charset="utf-8">
+          <label>Search</label>
+          <input type=hidden name="domains" value="{{ .Site.BaseURL }}">
+          <input type=hidden name="sitesearch" value="{{ .Site.BaseURL }}">
+          <input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
