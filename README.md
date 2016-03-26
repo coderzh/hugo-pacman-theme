@@ -4,7 +4,7 @@ Demo: http://coderzh.github.io/hugo-pacman-theme/
 
 ## config.toml
 
-```
+```toml
 BaseURL = "http://coderzh.github.io/"
 LanguageCode = "zh-CN"
 HasCJKLanguage = true
