@@ -5,13 +5,14 @@ Demo: http://coderzh.github.io/hugo-pacman-theme/
 ## config.toml
 
 ```
-BaseURL = "http://coderzh.github.io/hugo-pacman-theme/"
+BaseURL = "http://coderzh.github.io/"
 LanguageCode = "zh-CN"
 HasCJKLanguage = true
 Title = "Hugo PacMan Theme Demo"
 Theme = "hugo-pacman-theme"
 pygmentsStyle = "default"
 pygmentsUseClasses = true
+RSSUri = "feed.xml"
 
 [Author]
   Name = "coderzh"
@@ -33,11 +34,11 @@ pygmentsUseClasses = true
   MonthFormat = "2006年01月"
   FancyBox = true
 
-  [Params.DuoShuo]
-    ShortName = "coderzh"
-
-  #[Params.Disqus]
+  #[Params.DuoShuo]
   #  ShortName = "coderzh"
+
+  [Params.Disqus]
+    ShortName = "coderzh"
 
   [Params.GoogleAnalytics]
     ID = "UA-10147768-2"

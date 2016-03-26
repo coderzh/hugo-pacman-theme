@@ -5,7 +5,7 @@ Title = "Hugo PacMan Theme Demo"
 Theme = "hugo-pacman-theme"
 pygmentsStyle = "default"
 pygmentsUseClasses = true
-RSSUri= "feed.xml"
+RSSUri = "feed.xml"
 
 [Author]
   Name = "coderzh"
