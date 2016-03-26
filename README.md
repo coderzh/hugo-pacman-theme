@@ -64,3 +64,7 @@ pygmentsUseClasses = true
     URL = "/about"
     Weight = 2
 ```
+
+## ScreenShot
+
+![hugo-pacman-theme](http://7xlx3k.com1.z0.glb.clouddn.com/hugo-pacman-theme.png)
