@@ -1,5 +1,6 @@
 <script src="{{ .Site.BaseURL }}js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript">
+done = false;
 $(document).ready(function(){
   $('.navbar').click(function(){
     $('header nav').toggleClass('shownav');
@@ -39,6 +40,15 @@ $(document).ready(function(){
   });
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  $('form.search').on('submit', function (event) {
+    if (false === done) {
+      event.preventDefault();
+      var orgVal = $(this).find('#search').val();
+      $(this).find('#search').val('site:{{ .Site.BaseURL }}} ' + orgVal);
+      done = true;
+      $(this).submit();
+    }
   });
 });
 </script>
@@ -102,19 +112,6 @@ $(document).ready(function(){
   });
 });
 </script>
-{{ if .Site.Params.DuoShuo }}
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"{{ .Site.Params.DuoShuo }}"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script>
-{{ end }}
 {{ if or (eq .Section "tag") (eq .Section "category") }}
 <script type="text/javascript">
 $(document).ready(function(){

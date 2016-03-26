@@ -1,0 +1,19 @@
+{{ partial "head.html" . }}
+<body>
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+  <div id="container">
+    <div id="main">
+      {{ if .Site.Params.Strings.PageNotFound }}
+      {{ .Site.Params.Strings.PageNotFound }}
+      {{ else }}
+      Page Not Found!
+      {{ end }}
+    </div>
+    {{ partial "sidebar.html" . }}
+  </div>
+  <footer>{{ partial "footer.html" . }}</footer>
+  {{ partial "after_footer.html" .}}
+</body>
+</html>

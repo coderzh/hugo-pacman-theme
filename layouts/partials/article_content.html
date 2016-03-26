@@ -2,7 +2,6 @@
 	<article itemprop="articleBody">
     {{ partial "article_header.html" . }}
 	<div class="article-content">
-    {{ partial "article_gallery.html" . }}
     {{ if isset .Params "toc"}}
 		<div class="toc-article">
 			<strong class="toc-title">{{ .Site.Params.Strings.TableOfContents }}</strong>

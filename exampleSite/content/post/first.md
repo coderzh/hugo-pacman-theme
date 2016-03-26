@@ -47,11 +47,13 @@ print('hello world!')
 
 [link text itself]: http://blog.coderzh.com
 
+![qrcode](http://blog.coderzh.com/public/qrcode.jpg)
+
 ### 说明
 
 1. First ordered list item
 2. Another item
-  * Unordered sub-list. 
+  * Unordered sub-list.
 1. Actual numbers don't matter, just that it's a number
   1. Ordered sub-list
 4. And another item.
@@ -59,5 +61,3 @@ print('hello world!')
 ## Q&A
 
 Balabalabalabala...
-
-

@@ -15,11 +15,10 @@
       <li><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}
       <li>
-        <form class="search" action="https://www.google.com/search" method="get" accept-charset="utf-8">
-          <label>Search</label>
-          <input type=hidden name="domains" value="{{ .Site.BaseURL }}">
-          <input type=hidden name="sitesearch" value="{{ .Site.BaseURL }}">
-          <input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+        <form class="search" method="get" action="https://www.google.com/search">
+          <div>
+            <input type="text" id="search" name="q" placeholder="{{ .Site.Params.Strings.Search }}">
+          </div>
         </form>
       </li>
     </ul>

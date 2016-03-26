@@ -6,7 +6,7 @@
     {{ if and (isset .Params "Author") (isset .Params "AuthorHomepage") }}
       <a href="{{ .Params.AuthorHomepage }}" title="{{ .Params.Author }}">{{ .Params.Author }}</a>
     {{ else }}
-      <a href="{{ .Site.Params.AuthorHomepage }}" title="{{ .Site.Params.Author }}">{{ .Site.Params.Author }}</a>
+      <a href="{{ .Site.Params.AuthorHomepage }}" title="{{ .Site.Author.Name }}">{{ .Site.Author.Name }}</a>
     {{ end }}
   </p>
   <p class="article-time">

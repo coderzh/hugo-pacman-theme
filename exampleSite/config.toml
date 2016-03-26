@@ -1,11 +1,16 @@
-BaseURL = "http://pacman.coderzh.com"
+BaseURL = "http://coderzh.github.io/hugo-pacman-theme/"
 LanguageCode = "zh-CN"
 HasCJKLanguage = true
 Title = "Hugo PacMan Theme Demo"
 Theme = "hugo-pacman-theme"
+pygmentsStyle= "default"
+pygmentsUseClasses= true
+RSSUri= "feed.xml"
+
+[Author]
+  Name = "coderzh"
 
 [Params]
-  Author = "coderzh"
   AuthorHomepage = "http://blog.coderzh.com"
   BottomIntroduce = "Introduce1 <br/> Introduce2"
   Description = ""
@@ -22,7 +27,18 @@ Theme = "hugo-pacman-theme"
   MonthFormat = "2006年01月"
   FancyBox = true
 
+  [Params.DuoShuo]
+    ShortName = "coderzh"
+
+  #[Params.Disqus]
+  #  ShortName = "coderzh"
+
+  [Params.GoogleAnalytics]
+    ID = "UA-10147768-2"
+
   [Params.Strings]
+    Search = "搜索"
+    PageNotFound = "你访问的页面不存在"
     ShowSideBar = "显示侧边栏"
     HideSideBar = "隐藏侧边栏"
     Categories = "分类"
