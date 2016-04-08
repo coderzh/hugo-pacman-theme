@@ -3,16 +3,18 @@
 <div class="article-tags">
   <span></span>
   {{ range .Params.tags }}
-  <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+  <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
   {{ end }}
 </div>
 {{ end }}
+{{ end }}
 
+{{ if isset .Params "categories" }}
 {{ if not (eq (len .Params.categories) 0) }}
 <div class="article-categories">
   <span></span>
   {{ range .Params.categories }}
-  <a class="article-category-link" href="/categories/{{ . | urlize }}">{{ . }}</a>
+  <a class="article-category-link" href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>
   {{ end }}
 </div>
 {{ end }}

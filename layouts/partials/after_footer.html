@@ -45,7 +45,7 @@ $(document).ready(function(){
     if (false === done) {
       event.preventDefault();
       var orgVal = $(this).find('#search').val();
-      $(this).find('#search').val('site:{{ .Site.BaseURL }}} ' + orgVal);
+      $(this).find('#search').val('site:{{ .Site.BaseURL }} ' + orgVal);
       done = true;
       $(this).submit();
     }
