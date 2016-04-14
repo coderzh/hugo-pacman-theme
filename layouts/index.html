@@ -10,7 +10,7 @@
       {{ partial "article.html" $data }}
       {{ end }}{{ end }}
       <nav id="page-nav" class="clearfix">
-        <a class="page-number" href="/post/">More...</a>
+        <a class="page-number" href="{{ .Site.BaseURL }}post/">More...</a>
       </nav>
     </div>
     {{ partial "sidebar.html" . }}
