@@ -319,11 +319,12 @@ footer{margin-top:1em;background:#1f1f1f;padding:0 2% .5em}
 }.social-font a{float:left;display:block;width:14%;color:#fff;font-size:180%;padding:.5em;}
 @media only screen and (min-width: 1024px){.social-font a{padding:.3em}
 }.social-font a:hover:before{color:#2ca6cb}
-.social-font a[title="weibo"]::before,.social-font a[title="twitter"]::before,.social-font a[title="github"]::before,.social-font a[title="facebook"]::before{font-family:"FontAwesome";-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.social-font a[title="weibo"]::before,.social-font a[title="twitter"]::before,.social-font a[title="github"]::before,.social-font a[title="facebook"]::before,.social-font a[title="linkedin"]::before{font-family:"FontAwesome";-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .social-font a[title="weibo"]::before{content:"\f18a"}
 .social-font a[title="twitter"]::before{content:"\f099"}
 .social-font a[title="github"]::before{content:"\f09b"}
 .social-font a[title="facebook"]::before{content:"\f09a"}
+.social-font a[title="linkedin"]::before{content:"\f08c"}
 .copyright{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;width:100%;color:#fff;text-align:center;}
 @media only screen and (min-width: 768px){.copyright{float:left}
 }.copyright a{color:#fff;}
