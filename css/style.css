@@ -316,7 +316,7 @@ footer{margin-top:1em;background:#1f1f1f;padding:0 2% .5em}
 }.social-font{width:100%;margin:0 auto;float:left;padding-left:3%;}
 @media only screen and (min-width: 568px){.social-font{padding-left:20%}
 }@media only screen and (min-width: 768px){.social-font{width:18em;position:absolute;right:-3em;top:3em}
-}.social-font a{float:left;display:block;width:14%;color:#fff;font-size:180%;padding:.5em;}
+}.social-font a{float:left;display:block;width:12;color:#fff;font-size:180%;padding:.5em;}
 @media only screen and (min-width: 1024px){.social-font a{padding:.3em}
 }.social-font a:hover:before{color:#2ca6cb}
 .social-font a[title="weibo"]::before,.social-font a[title="twitter"]::before,.social-font a[title="github"]::before,.social-font a[title="facebook"]::before,.social-font a[title="linkedin"]::before{font-family:"FontAwesome";-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
