@@ -3,8 +3,8 @@
       <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="url">{{ .Title }}</a>
   </h1>
   <p class="article-author">By
-    {{ if and (isset .Params "Author") (isset .Params "AuthorHomepage") }}
-      <a href="{{ .Params.author_homepage }}" title="{{ .Params.author }}">{{ .Params.Author }}</a>
+    {{ if and (isset .Params "author") (isset .Params "author_homepage") }}
+      <a href="{{ .Params.author_homepage }}" title="{{ .Params.author }}">{{ .Params.author }}</a>
     {{ else }}
       <a href="{{ .Site.Params.AuthorHomepage }}" title="{{ .Site.Author.Name }}">{{ .Site.Author.Name }}</a>
     {{ end }}

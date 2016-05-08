@@ -4,6 +4,8 @@ title = "first"
 categories = ["技术文章"]
 tags = ["Foo", "Bar"]
 toc = true
+author = "coderzh"
+author_homepage =  "http://blog.coderzh.com/post/"
 
 +++
 
