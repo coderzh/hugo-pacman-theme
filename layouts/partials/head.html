@@ -15,7 +15,7 @@
   <meta name="twitter:title" content="{{ if ne .URL "/" }}{{ .Title }} - {{ end }}{{ .Site.Title }}" />{{ end }}
   {{ with .Description }}<meta name="twitter:description" content="{{ . }}" />{{ else }}
   <meta name="twitter:description" content="{{ .Site.Params.Description }}">{{ end }}
-  {{ if .RSSlink }}<link rel="alternate" href="{{ .Site.BaseURL }}feed.xml" title="{{ .Site.Title }}" type="application/rss+xml"/>{{ end }}
+  {{ if .RSSLink }}<link rel="alternate" href="{{ .Site.BaseURL }}feed.xml" title="{{ .Site.Title }}" type="application/rss+xml"/>{{ end }}
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico"/>
   <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}apple-touch-icon.png" />
   <link rel="apple-touch-icon-precomposed" href="{{ .Site.BaseURL }}apple-touch-icon.png" />
