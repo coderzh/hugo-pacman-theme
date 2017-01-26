@@ -5,10 +5,9 @@
   </header>
   <div id="container">
     <div id="main">
-      {{ range $index,$data := .Data.Pages }}
-      {{ if ge $data.Date.Year .Now.Year }}
+      {{ range $index,$data := first 10 (where .Data.Pages "Type" "post") }}
       {{ partial "article.html" $data }}
-      {{ end }}{{ end }}
+      {{ end }}
       <nav id="page-nav" class="clearfix">
         <a class="page-number" href="{{ .Site.BaseURL }}post/">More...</a>
       </nav>
