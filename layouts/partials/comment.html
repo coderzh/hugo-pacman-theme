@@ -1,10 +1,10 @@
-{{ if isset .Site.Params "DuoShuo" }}
+{{ if .Site.Params.DuoShuoShortName }}
 <section class="comment">
   <div class="ds-thread" data-thread-key="{{ .Permalink }}"
    data-title="{{ .Title }}" data-url="{{ .Permalink }}"></div>
 </section>
 <script type="text/javascript">
-var duoshuoQuery = {short_name:"{{ .Site.Params.DuoShuo.ShortName }}"};
+var duoshuoQuery = {short_name:"{{ .Site.Params.DuoShuoShortName }}"};
 (function() {
   var ds = document.createElement('script');
   ds.type = 'text/javascript';ds.async = true;
@@ -16,7 +16,7 @@ var duoshuoQuery = {short_name:"{{ .Site.Params.DuoShuo.ShortName }}"};
 </script>
 {{ end }}
 
-{{ if isset .Site.Params "Disqus"}}
+{{ if .Site.Params.DisqusShortName }}
 <section class="comment">
 <div id="disqus_thread"></div>
 </section>
@@ -32,7 +32,7 @@ this.page.identifier = {{ .Permalink }};
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 
-s.src = '//{{ .Site.Params.Disqus.ShortName }}.disqus.com/embed.js';
+s.src = '//{{ .Site.Params.DisqusShortName }}.disqus.com/embed.js';
 
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
