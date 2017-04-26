@@ -2,7 +2,7 @@
   <div class="archiveslist">
     <p class="asidetitle">{{ .Site.Params.Strings.Archive }}</p>
     <ul class="archive-list">
-      {{ range $value := (where .Site.Pages "Type" "post").GroupByDate .Site.Params.MonthFormat }}
+      {{ range $value := (where .Site.RegularPages "Type" "post").GroupByDate .Site.Params.MonthFormat }}
       {{ $url := (index $value.Pages 0).Date.Format "2006-01" | urlize }}
       <li class="archive-list-item">
         <a class="archive-list-link" href="{{ $.Site.BaseURL }}post/#{{ $url }}">{{ .Key }}</a><span class="archive-list-count">{{ len $value.Pages }}</span>
