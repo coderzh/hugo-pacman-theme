@@ -26,15 +26,9 @@ RSSUri = "feed.xml"
   DateFormat = "2006年01月02日"
   MonthFormat = "2006年01月"
   FancyBox = true
-
-  #[Params.DuoShuo]
-  #  ShortName = "coderzh"
-
-  [Params.Disqus]
-    ShortName = "coderzh"
-
-  [Params.GoogleAnalytics]
-    ID = "UA-10147768-2"
+  # DuoShuoShortName = "coderzh"
+  DisqusShortName = "coderzh"
+  GoogleAnalyticsID = "UA-10147768-2"
 
   [Params.Strings]
     Search = "搜索"
