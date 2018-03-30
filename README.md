@@ -5,17 +5,24 @@ Demo: http://coderzh.github.io/hugo-pacman-theme/
 ## config.toml
 
 ```toml
-BaseURL = "http://coderzh.github.io/"
+BaseURL = "http://coderzh.github.io/hugo-pacman-theme/"
 LanguageCode = "zh-CN"
 HasCJKLanguage = true
 Title = "Hugo PacMan Theme Demo"
 Theme = "hugo-pacman-theme"
 pygmentsStyle = "default"
 pygmentsUseClasses = true
-RSSUri = "feed.xml"
 
 [Author]
   Name = "coderzh"
+
+[outputs]
+  home = [ "RSS", "HTML" ]
+    
+[outputFormats] 
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"
 
 [Params]
   AuthorHomepage = "http://blog.coderzh.com"
@@ -33,9 +40,12 @@ RSSUri = "feed.xml"
   DateFormat = "2006年01月02日"
   MonthFormat = "2006年01月"
   FancyBox = true
-  # DuoShuoShortName = "coderzh"
-  DisqusShortName = "coderzh"
-  GoogleAnalyticsID = "UA-10147768-2"
+
+  [Params.GoogleAnalytics]
+    ID = "UA-10147768-2"
+
+  [Params.Disqus]
+    ShortName = "coderzh"
 
   [Params.Strings]
     Search = "搜索"
