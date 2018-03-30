@@ -5,14 +5,14 @@ name = "Hugo Pacman Theme"
 license = "MIT"
 licenselink = "https://github.com/coderzh/hugo-pacman-theme/blob/master/LICENSE.md"
 description = ""
-homepage = "http://blog.coderzh.com/"
-tags = ["", ""]
+homepage = "https://github.com/coderzh/hugo-pacman-theme"
+tags = ["Pacman", "Blog", "Responsive"]
 features = ["", ""]
 min_version = 0.15
 
 [author]
   name = "coderzh"
-  homepage = "http://blog.coderzh.com"
+  homepage = "https://github.com/coderzh/hugo-pacman-theme"
 
 # If porting an existing theme
 [original]

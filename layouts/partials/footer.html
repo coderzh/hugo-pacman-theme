@@ -27,7 +27,7 @@
     <a href="https://www.linkedin.com/{{ . }}" target="_blank" title="linkedin"></a>
     {{ end }}
   </div>
-  <p class="copyright">Powered by <a href="http://gohugo.io" target="_blank" title="hugo">hugo</a> and Theme by <a href="https://github.com/coderzh/hugo-pacman-theme" target="_blank" title="hugo-pacman-theme">hugo-pacman-theme</a> © {{ .Now.Year }}
+  <p class="copyright">Powered by <a href="http://gohugo.io" target="_blank" title="hugo">hugo</a> and Theme by <a href="https://github.com/coderzh/hugo-pacman-theme" target="_blank" title="hugo-pacman-theme">hugo-pacman-theme</a> © {{ now.Format "2006" }}
     {{ if .Site.Author.Name }}
     <a href="{{ .Site.BaseURL }}" target="_blank" title="{{ .Site.Author.Name }}">{{ .Site.Author.Name }}</a>
     {{ else }}
