@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://coderzh.github.io/hugo-pacman-theme/</loc>
-    <lastmod>2016-03-20T23:28:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://coderzh.github.io/hugo-pacman-theme/about/</loc>
-    <lastmod>2016-03-20T23:28:02+08:00</lastmod>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/post/second/</loc>
+    <lastmod>2017-03-20T12:13:19+08:00</lastmod>
   </url>
   
   <url>
@@ -20,6 +15,63 @@
   <url>
     <loc>http://coderzh.github.io/hugo-pacman-theme/post/hello-hugo/</loc>
     <lastmod>2016-02-20T15:34:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/tags/bar/</loc>
+    <lastmod>2017-03-20T12:13:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/tags/foo/</loc>
+    <lastmod>2017-03-20T12:13:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/feed.xml</loc>
+    <lastmod>2017-03-20T12:13:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/post/</loc>
+    <lastmod>2017-03-20T12:13:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/tags/</loc>
+    <lastmod>2017-03-20T12:13:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/tags/test/</loc>
+    <lastmod>2016-02-20T15:34:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/</loc>
+    <lastmod>2016-02-20T15:34:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://coderzh.github.io/hugo-pacman-theme/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2017-03-20T12:13:19+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
