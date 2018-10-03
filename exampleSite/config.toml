@@ -33,6 +33,7 @@ pygmentsUseClasses = true
   DateFormat = "2006年01月02日"
   MonthFormat = "2006年01月"
   FancyBox = true
+  CreativeCommons = true
 
   [Params.GoogleAnalytics]
     ID = "UA-10147768-2"
