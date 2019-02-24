@@ -25,7 +25,7 @@ pygmentsUseClasses = true
     baseName = "feed"
 
 [Params]
-  AuthorHomepage = "http://blog.coderzh.com"
+  AuthorHomepage = "https://blog.coderzh.com"
   BottomIntroduce = "Introduce1 <br/> Introduce2"
   Description = ""
   Subtitle = "subtitle"
@@ -72,4 +72,4 @@ pygmentsUseClasses = true
 
 ## ScreenShot
 
-![hugo-pacman-theme](http://7xlx3k.com1.z0.glb.clouddn.com/hugo-pacman-theme.png)
+![hugo-pacman-theme](https://raw.githubusercontent.com/coderzh/hugo-pacman-theme/eda9c351a538558f42a0b086a9320c99dd98e579/images/screenshot.png)

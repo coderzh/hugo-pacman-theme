@@ -7,7 +7,7 @@ pygmentsStyle = "default"
 pygmentsUseClasses = true
 
 [Author]
-  Name = "coderzh"
+  Name = "your-name"
 
 [outputs]
   home = [ "RSS", "HTML" ]
@@ -18,16 +18,16 @@ pygmentsUseClasses = true
     baseName = "feed"
 
 [Params]
-  AuthorHomepage = "http://blog.coderzh.com"
+  AuthorHomepage = "your-home-page"
   BottomIntroduce = "Introduce1 <br/> Introduce2"
   Description = ""
   Subtitle = "subtitle"
-  Weibo = "coderzh"
-  WeiboID = 1816308191
-  Twitter = "coderzh"
-  GitHub = "coderzh"
-  Facebook = "coderzh"
-  LinkIn = "coderzh"
+  Weibo = ""
+  WeiboID = 123
+  Twitter = ""
+  GitHub = ""
+  Facebook = ""
+  LinkIn = ""
   Imglogo = "img/logo.svg"
   AuthorImg = "img/author.jpg"
   DateFormat = "2006年01月02日"
@@ -36,10 +36,10 @@ pygmentsUseClasses = true
   CreativeCommons = true
 
   [Params.GoogleAnalytics]
-    ID = "UA-10147768-2"
+    ID = ""
 
   [Params.Disqus]
-    ShortName = "coderzh"
+    ShortName = ""
 
   [Params.Strings]
     Search = "搜索"
