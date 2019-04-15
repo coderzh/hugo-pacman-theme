@@ -34,6 +34,7 @@ pygmentsUseClasses = true
   MonthFormat = "2006年01月"
   FancyBox = true
   CreativeCommons = true
+  MathJax = false
 
   [Params.GoogleAnalytics]
     ID = ""
