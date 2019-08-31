@@ -5,7 +5,7 @@
   </header>
   <div id="container">
     <div id="main">
-      {{ range $index,$data := first 10 (where .Data.Pages "Type" "post") }}
+      {{ range $index,$data := first 10 (where site.RegularPages "Type" "post") }}
       {{ partial "article.html" $data }}
       {{ end }}
       <nav id="page-nav" class="clearfix">
