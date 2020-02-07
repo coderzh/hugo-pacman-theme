@@ -1,23 +1,25 @@
 <div>
-  {{ if .Site.Params.Imglogo }}
   <div id="imglogo">
-    <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}{{ .Site.Params.Imglogo }}" alt="{{ .Site.Title }}" title="{{ .Site.Title }}"/></a>
+    <a href="{{ .Site.BaseURL }}"><img src='{{ .Site.BaseURL }}{{ .Site.Params.Imglogo | default "img/logo.svg" }}' alt="{{ .Site.Title }}" title="{{ .Site.Title }}"/></a>
   </div>
-  {{ end }}
   <div id="textlogo">
     <h1 class="site-name"><a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a></h1>
-    <h2 class="blog-motto">{{ with .Site.Params.Subtitle }}{{ . }}{{ end }}</h2>
+    <h2 class="blog-motto">{{ .Site.Params.Subtitle | default "awesome!"}}</h2>
   </div>
   <div class="navbar"><a class="navbutton navmobile" href="#" title="menu"></a></div>
   <nav class="animated">
     <ul>
-      {{ range .Site.Menus.main }}
+      {{ with .Site.Menus.main }}
+      {{ range . }}
       <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+      {{ else }}
+      <li><a href="/">Home</a></li>
       {{ end }}
       <li>
         <form class="search" method="get" action="https://www.google.com/search">
           <div>
-            <input type="text" id="search" name="q" placeholder="{{ .Site.Params.Strings.Search }}">
+            <input type="text" id="search" name="q" placeholder='{{ .Site.Params.Strings.Search | default "Search" }}'>
           </div>
         </form>
       </li>

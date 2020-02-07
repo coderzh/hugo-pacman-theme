@@ -1,7 +1,7 @@
 {{ if isset .Site.Taxonomies "categories" }}
 {{ if not (eq (len .Site.Taxonomies.categories) 0) }}
 <div class="categorieslist">
-  <p class="asidetitle">{{ .Site.Params.Strings.Categories }}</p>
+  <p class="asidetitle">{{ .Site.Params.Strings.Categories | default "Categories" }}</p>
   <ul>
     {{ range $name, $items := .Site.Taxonomies.categories }}
     <li><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}" title="{{ $name }}">{{ $name }}<sup>{{ len $items }}</sup></a></li>

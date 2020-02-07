@@ -1,31 +1,18 @@
 <div id="footer" >
-  {{ if .Site.Params.AuthorImg }}
   <div class="line">
     <span></span>
-    <div style='background:no-repeat url("{{ .Site.BaseURL }}{{ .Site.Params.AuthorImg }}") left top;-webkit-background-size:6.875em 6.875em;-moz-background-size:6.875em 6.875em;background-size:6.875em 6.875em;' class="author" ></div>
+    {{ $authorImg := (.Site.Params.AuthorImg | default "img/author.jpg") }}
+    <div style='background:no-repeat url("{{ .Site.BaseURL }}{{ $authorImg }}") left top;-webkit-background-size:6.875em 6.875em;-moz-background-size:6.875em 6.875em;background-size:6.875em 6.875em;' class="author" ></div>
   </div>
-  {{ end }}
-  {{ with .Site.Params.BottomIntroduce }}
   <section class="info">
-    <p>{{ . | safeHTML }}</p>
+    <p>{{ .Site.Params.BottomIntroduce | default "" | safeHTML }}</p>
   </section>
-  {{ end }}
   <div class="social-font clearfix">
-    {{ with .Site.Params.Weibo }}
-    <a href="http://weibo.com/{{ . }}" target="_blank" title="weibo"></a>
-    {{ end }}
-    {{ with .Site.Params.Twitter }}
-    <a href="https://twitter.com/{{ . }}" target="_blank" title="twitter"></a>
-    {{ end }}
-    {{ with .Site.Params.GitHub }}
-    <a href="https://github.com/{{ . }}" target="_blank" title="github"></a>
-    {{ end }}
-    {{ with .Site.Params.Facebook }}
-    <a href="https://www.facebook.com/{{ . }}" target="_blank" title="facebook"></a>
-    {{ end }}
-    {{ with .Site.Params.LinkIn }}
-    <a href="https://www.linkedin.com/{{ . }}" target="_blank" title="linkedin"></a>
-    {{ end }}
+    <a href='http://weibo.com/{{ .Site.Params.Weibo | default "coderzh" }}' target="_blank" title="weibo"></a>
+    <a href='https://twitter.com/{{ .Site.Params.Twitter | default "coderzh" }}' target="_blank" title="twitter"></a>
+    <a href='https://github.com/{{ .Site.Params.GitHub | default "coderzh" }}' target="_blank" title="github"></a>
+    <a href='https://www.facebook.com/{{ .Site.Params.Facebook | default "coderzh" }}' target="_blank" title="facebook"></a>
+    <a href='https://www.linkedin.com/{{ .Site.Params.LinkIn | default "coderzh" }}' target="_blank" title="linkedin"></a>
   </div>
   <p class="copyright">Powered by <a href="http://gohugo.io" target="_blank" title="hugo">hugo</a> and Theme by <a href="https://github.com/coderzh/hugo-pacman-theme" target="_blank" title="hugo-pacman-theme">hugo-pacman-theme</a> © {{ now.Format "2006" }}
     {{ if .Site.Author.Name }}

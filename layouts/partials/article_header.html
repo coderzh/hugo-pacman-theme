@@ -6,10 +6,10 @@
     {{ if and (isset .Params "author") (isset .Params "author_homepage") }}
       <a href="{{ .Params.author_homepage }}" title="{{ .Params.author }}">{{ .Params.author }}</a>
     {{ else }}
-      <a href="{{ .Site.Params.AuthorHomepage }}" title="{{ .Site.Author.Name }}">{{ .Site.Author.Name }}</a>
+      <a href="{{ .Site.Params.AuthorHomepage }}" title="{{ .Site.Author.Name }}">{{ .Site.Author.Name | default "you" }}</a>
     {{ end }}
   </p>
   <p class="article-time">
-    <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.DateFormat }}</time>
+    <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format (.Site.Params.DateFormat | default "2006-01-02") }}</time>
   </p>
 </header>
