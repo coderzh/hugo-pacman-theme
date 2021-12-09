@@ -38,6 +38,7 @@ pygmentsUseClasses = true
 
   [Params.GoogleAnalytics]
     ID = ""
+    gtag_ID = ""
 
   [Params.Disqus]
     ShortName = ""
